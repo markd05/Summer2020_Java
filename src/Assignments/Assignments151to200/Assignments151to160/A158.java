@@ -1,5 +1,6 @@
 package Assignments.Assignments151to200.Assignments151to160;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class A158 {
@@ -39,6 +40,13 @@ class Main {
      */
     public static void add_to_r(int[] r,int n) {
 // create new array with one more position.
+        int[] num = new int[r.length+1];
+        for(int i=0 ;i<=r.length-1;i++)
+        {
+            num[i] = r[i];
+        }
+        num[num.length-1] = n;
+        System.out.println(Arrays.toString(num));
 
     }
     public static void main(String[] args) {
