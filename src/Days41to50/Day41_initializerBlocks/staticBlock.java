@@ -14,7 +14,12 @@ public class staticBlock {
     }
 
     static { //always runs first
-        System.out.println("static block");
+        System.out.println("static block1");
+        //System.out.println("static block B");
+    }
+
+    static {
+        System.out.println("static block2");
     }
 
 }
