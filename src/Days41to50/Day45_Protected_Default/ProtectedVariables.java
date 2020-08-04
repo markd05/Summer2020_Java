@@ -1,0 +1,8 @@
+package Days41to50.Day45_Protected_Default;
+
+public class ProtectedVariables {
+
+    protected String nameProtected = "Parsa Mehdi";
+    public String namePublic = "Akobir";
+
+}
