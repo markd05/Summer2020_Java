@@ -1,5 +1,5 @@
 package Assignments.Assignments201to246.Assignments201to210;
-
+import java.util.*;
 public class A210 {
     /*
     In the sport of diving, seven judges award a score between 0 and 10, where each score may be a floating-point value.
@@ -34,5 +34,26 @@ public class Main {
   }
 }
      */
+    public static void main(String[] args) {
+        //WRITE YOUR CODES HERE
+        Scanner scan = new Scanner(System.in);
+        double[] arr = new double[7];
+        for (int i = 1; i <= arr.length; i++) {
+            System.out.println("Enter score for judge " + i + ":");
+            arr[i-1] = scan.nextDouble();
+        }
+        Arrays.sort(arr);
+        double total = 0;
+        for (int i = 1; i <= arr.length-2; i++) {
+            total += arr[i];
+        }
+        System.out.println("Enter difficulty:");
+        double difficulty = scan.nextDouble();
+        total *= difficulty;
+        total *= 0.6;
+
+        // FINAL OUTPUT
+        System.out.printf("Total: %.2f", total);
+    }
     
 }
