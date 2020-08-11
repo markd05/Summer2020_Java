@@ -52,7 +52,7 @@ public class Main {
         String split = scan.nextLine();
 
         System.out.println("Number of people");
-        double people = scan.nextInt();
+        int people = scan.nextInt();
 
         System.out.println("Check amount");
         double check = scan.nextDouble();
@@ -78,10 +78,12 @@ public class Main {
         } else if (service.equalsIgnoreCase("great")) {
             tip = check*.2;
         } else if (service.equalsIgnoreCase("excellent")) {
-            tip = check+.25;
+            tip = check*.25;
         }
 
-        double total = check + tip, perPerson = total/people, tipPerPerson = tip/people;
+        double total = check + tip;
+        double perPerson = total / people;
+        double tipPerPerson = tip/people;
 
         if (split.equalsIgnoreCase("Split")) {
             System.out.println("Number of people entered: " + People);

@@ -38,7 +38,8 @@ public class Main {
         String word = scan.next();
 
         //your code here
-        if (word.substring(0, 1).equalsIgnoreCase("x") && word.substring(word.length()-1).equalsIgnoreCase("x")) {
+        if (word.substring(0, 1).equalsIgnoreCase("x") &&
+                word.substring(word.length()-1).equalsIgnoreCase("x")) {
             System.out.println(word.substring(1,word.length()-1));
         } else if (word.substring(0, 1).equalsIgnoreCase("x")) {
             System.out.println(word.substring(1));

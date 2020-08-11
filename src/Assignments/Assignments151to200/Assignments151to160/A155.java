@@ -31,7 +31,7 @@ class Main { // remember to test your code
     public static int wordCount(String words) {
         //Write your code here
         int count = 0;
-        String[] arr = words.split(" ");
+        String[] arr = words.split(" "); // [foo, bar]
         for (int i = 0; i < arr.length; i++) {
             count++;
         }

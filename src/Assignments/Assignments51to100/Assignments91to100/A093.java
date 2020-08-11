@@ -15,10 +15,10 @@ public class Main {
         //WRITE YOUR CODE HERE
 
         String even = "";
-        for (int i = 2; i <= 100; i++) {
-            if (i % 2 == 0) {
+        for (int i = 2; i <= 100; i+=2) {
+
                 even += i + ", ";
-            }
+
         }
         System.out.println(even.substring(0,even.length()-2));
     }

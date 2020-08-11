@@ -31,5 +31,6 @@ public class Main {
         String lan2 = scan.nextLine();
         //WRITE YOUR CODE BELOW THIS LINE:
         System.out.println("I will learn " + lan1 + " and " + lan2 + " at CybertekSchool");
+        System.out.println("lan1 = " + lan1);
     }
 }

@@ -35,8 +35,8 @@ public class Main {
         //your code here
 
         String first = email.substring(0,email.indexOf("_"));
-        String last = email.substring(email.indexOf("_")+1,email.indexOf("@"));
-        String domain = email.substring(email.indexOf("@")+1,email.indexOf("."));
+        String last = email.substring(email.indexOf("_")+1,email.lastIndexOf("@"));
+        String domain = email.substring(email.lastIndexOf("@")+1,email.indexOf("."));
         String topLevel = email.substring(email.indexOf(".")+1);
 
         System.out.println("First name: " + first.substring(0,1).toUpperCase() + last.substring(1));

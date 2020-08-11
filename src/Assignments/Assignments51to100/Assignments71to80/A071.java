@@ -117,7 +117,7 @@ System.out.println("*****************************************");
         //WRITE YOUR CODE HERE
 
         System.out.println("Enter property type:\nCondo\nTownhouse\nSingle Family Home");
-        houseType = scan.nextLine();
+        houseType = scan.nextLine().toLowerCase();
         System.out.println("How many bedrooms do you have?");
         numberOfBedrooms = scan.nextInt();
         System.out.println("Do you have a backyard? true = yes, false = no");
