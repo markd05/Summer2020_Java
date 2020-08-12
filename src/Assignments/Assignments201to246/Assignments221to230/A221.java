@@ -50,7 +50,15 @@ public class Stock{
 
 }
  */
-public class Stock {
+class Main {
+    public static void main(String[] args) {
+        //Test code here
+        A221 obj = new A221("Goog", "Google, Inc.", 802, 10);
+        obj.marketCap();
+        System.out.println(obj.toString());
+    }
+}
+public class A221 {
     // DO NOT CHANGE THE METHOD BELOW
     public void adjustPrice(int value){
         int temp=price;
@@ -66,7 +74,7 @@ public class Stock {
     int totalShares;
     long marketCap;
 
-    public Stock(String tickerSymbol, String companyName, int price, int totalShares) {
+    public A221(String tickerSymbol, String companyName, int price, int totalShares) {
         this.tickerSymbol = tickerSymbol.toUpperCase();
         this.companyName = companyName;
         this.price = price;
@@ -75,6 +83,11 @@ public class Stock {
 
     public void marketCap() {
         marketCap = totalShares*price;
+    }
+
+    public String toString() {
+        return "Ticker Symbol: "+tickerSymbol+"\nCompany: "+
+                companyName+"\nCurrent Price: $"+price+"\nMarket Cap: $"+marketCap;
     }
 
 }
